@@ -1,1 +1,1 @@
-# adapterj-example-vertx-springboot
+# adapterj-example-vertx-spring
