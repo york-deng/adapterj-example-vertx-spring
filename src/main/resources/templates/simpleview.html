@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>SIMPLE VIEW</title>
+<style type="text/css">
+body { font-family:sans-serif; }
+a:link { color:blue; }
+a:visited { color:blue; }
+/**
+ * FORM
+ */
+form.form textarea, form.form select, form.form input[type="text"], form.form input[type="date"] { 
+   padding-top:5px;
+   padding-bottom:5px;
+   padding-left:5px;
+   padding-right:5px;
+   background-color:#ffffff;
+   border:solid 1px #a9a9a9;
+   -moz-border-radius:2px;
+   -webkit-border-radius:2px;
+   border-radius:2px;
+   font-size:13px;
+   color:#000000;
+}
+form.form p {
+   margin-top:0px;
+   margin-bottom:0px;
+   padding-left:3px;
+   padding-right:3px;
+   text-align:left;
+}
+form.form p.label {
+   margin-top:0px;
+   margin-bottom:0px;
+   padding-top:8px;
+   padding-bottom:8px;
+   text-align:right;
+   white-space:nowrap;
+}
+form.form p.label label {
+   padding-top:0px;
+   padding-bottom:0px;
+   font-size:15px;
+   font-weight:normal;
+   color:#333333;
+}
+form.form p.value {
+   float:left;
+   margin-top:0px;
+   margin-bottom:0px;
+   padding-top:8px;
+   padding-bottom:8px;
+   min-width:355px;
+   text-align:left;
+   white-space:nowrap;
+}
+form.form p.value label {
+   padding-top:0px;
+   padding-bottom:0px;
+   font-family: monospace;
+   font-size:15px;
+   font-weight:normal;
+   color:#333333;
+}
+form.form p.value span {
+   padding-top:0px;
+   padding-bottom:0px;
+   font-family: monospace;
+   font-size:15px;
+   font-weight:normal;
+}
+form.form p.input {
+   float:left;
+   margin-top:0px;
+   margin-bottom:0px;
+   font-family:monospace;
+   font-size:15px;
+   font-weight:normal;
+   text-align:left;
+}
+form.form p.input select {
+   width: 419px;
+   text-align:left;
+   font-family:monospace;
+   font-size:15px;
+   font-weight:normal;
+}
+form.form p.input input[type="text"] {
+   width: 150px; /* 150ps or 300px */
+   text-align:left;
+   font-family:monospace;
+   font-size:15px;
+   font-weight:normal;
+}
+form.form p.input input[type="submit"], input[type="button"] {
+   padding-top:8px;
+   padding-bottom:8px;
+   padding-right:25px;
+   padding-left:25px;
+   background-color:#afafaf;
+   border:solid 1px #a9a9a9;
+   -moz-border-radius:2px;
+   -webkit-border-radius:2px;
+   border-radius:2px;
+   font-family:monospace;
+   font-size:15px;
+   font-weight:bold;
+   color:#000000;
+   text-decoration:underline;
+}
+form.form p.label input[type="submit"], input[type="button"] {
+   padding-top:8px;
+   padding-bottom:8px;
+   padding-right:25px;
+   padding-left:25px;
+   background-color:#afafaf;
+   border:solid 1px #a9a9a9;
+   -moz-border-radius:2px;
+   -webkit-border-radius:2px;
+   border-radius:2px;
+   font-family:monospace;
+   font-size:15px;
+   font-weight:bold;
+   color:#000000;
+   text-decoration:underline;
+}
+form.form p.value input[type="submit"], input[type="button"] {
+   padding-top:8px;
+   padding-bottom:8px;
+   padding-right:25px;
+   padding-left:25px;
+   background-color:#afafaf;
+   border:solid 1px #a9a9a9;
+   -moz-border-radius:2px;
+   -webkit-border-radius:2px;
+   border-radius:2px;
+   font-family:monospace;
+   font-size:15px;
+   font-weight:bold;
+   color:#000000;
+   text-decoration:underline;
+}
+/**
+ * DIV table
+ */
+.div-table {
+	display: table;
+	width: auto;
+}
+.div-table-row {
+	display: table-row; 
+}
+.div-table-heading {
+	background-color: #FFF;
+	display: table-header-group;
+	font-weight: bold;
+}
+.div-table-cell, .div-table-head {
+	display: table-cell;
+	padding: 3px 5px;
+	border: 0px solid #FFF;
+	vertical-align: top;
+}
+.div-table-foot {
+	display: table-footer-group;
+	background-color: #FFF;
+	font-weight: bold;
+}
+.div-table-body {
+	display: table-row-group;
+}
+</style>
+</head>
+
+<body>
+<div><h1>SOURCE:</h1></div>
+
+<!-- view begin -->
+<div id="_view" style="margin:16px;">
+
+<!-- table begin -->
+<div class="div-table">
+
+<!-- table body begin -->
+<div class="div-table-body">
+
+<!-- source.id -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p id="Top" /></div>
+<div class="div-table-cell"><p class="value"><input id="source.id" name="source.id" type="hidden" /></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.name -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.name">Name:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.name">金融时报 FTChinese</span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.name -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.abbr">Abbr:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.abbr">金融时报</span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.logo -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.logo">Logo:</label></p></div>
+<div class="div-table-cell"><p class="value"><img id="source.logo" src="http://tse2.mm.bing.net/th?id=OIP.SDVkRBhUit-NnUpcLBUswAHaB-"><span>*</span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.domain -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.domain">Domain:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.domain">ftchinese.com</span><span>*</span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.www -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.www">Homepage:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.www">www.ftchinese.com</span><span>*</span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.description -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.description">Description:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.description">FT中文网是英国«金融时报»唯一的非英语网站。</span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.type -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.type">Type:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.type"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.country -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.country">Country:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.country"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.language -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.language">Language:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.language"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.specific -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.specific">Specific:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.specific"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.priority -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.priority">Priority:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.priority"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.latency -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.latency">Latency:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.latency"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<!-- source.url1 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="url1">URL1:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.url1">http://www.ftchinese.com/</span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.type1 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="type1">Type1:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.type1"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.encoding1 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.encoding1">Encoding1:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.encoding1">UTF-8</span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<!-- source.url2 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url2">URL2:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.url2"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.type2 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.type2">Type2:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.type2"></span></p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.encoding2 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.encoding2">Encoding2:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.encoding2"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url3">URL3:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.url3"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="type3">Type3:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.type3"></span></p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.encoding3">Encoding3:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.encoding3"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url4">URL4:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.url4"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.type4">Type4:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.type4"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.encoding4">Encoding4:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.encoding4"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url5">URL5:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.url5"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.type5">Type5:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.type5"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.encoding5">Encoding5:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.encoding5"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url6">URL6:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.url6"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.type6">Type6:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.type6"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.encoding6">Encoding6:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.encoding6"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url7">URL7:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.url7"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.type7">Type7:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.type7"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.encoding7">Encoding7:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.encoding7"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url8">URL8:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.url8"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.type8">Type8:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.type8"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.encoding8">Encoding8:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.encoding8"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url9">URL9:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.url9"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.type9">Type9:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.type9"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.encoding9">Encoding9:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.encoding9"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.version">Version:</label></p></div>
+<div class="div-table-cell"><p class="value"><span id="source.version"></span></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label" id="Ok" /></div>
+<div class="div-table-cell"><p class="value"><a id="link[0].url" href="#">Edit</a></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<div class="div-table-row ">
+<div class="div-table-cell"></div>
+<div class="div-table-cell">
+	<p class="value"><a href="#Top">Goto Page Top</a></p>
+	<p class="value"><a href="javascript:history.go(-1);">Back to previous page</a></p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+</div>
+<!-- table body end -->
+</div>
+<!-- table end -->
+
+</div>
+<!-- view end -->
+
+<br /><br /><br />
+
+</body>
+</html>

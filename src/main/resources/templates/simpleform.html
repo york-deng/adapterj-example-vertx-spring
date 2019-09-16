@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Language" content="zh-CN"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>SIMPLE FORM</title>
+<style type="text/css">
+body { font-family:sans-serif; }
+a:link { color:blue; }
+a:visited { color:blue; }
+/**
+ * FORM
+ */
+form.form textarea, form.form select, form.form input[type="text"], form.form input[type="date"] { 
+   padding-top:5px;
+   padding-bottom:5px;
+   padding-left:5px;
+   padding-right:5px;
+   background-color:#ffffff;
+   border:solid 1px #a9a9a9;
+   -moz-border-radius:2px;
+   -webkit-border-radius:2px;
+   border-radius:2px;
+   font-family:monospace;
+   font-size:15px;
+   color:#000000;
+}
+form.form p {
+   margin-top:0px;
+   margin-bottom:0px;
+   padding-left:3px;
+   padding-right:3px;
+   text-align:left;
+}
+form.form p.label {
+   margin-top:0px;
+   margin-bottom:0px;
+   padding-top:8px;
+   padding-bottom:8px;
+   text-align:right;
+   white-space:nowrap;
+}
+form.form p.label label {
+   padding-top:0px;
+   padding-bottom:0px;
+   font-size:15px;
+   font-weight:normal;
+   color:#333333;
+}
+form.form p.value {
+   margin-top:0px;
+   margin-bottom:0px;
+   padding-top:8px;
+   padding-bottom:8px;
+   min-width:355px;
+   text-align:left;
+   white-space:nowrap;
+}
+form.form p.value label {
+   padding-top:0px;
+   padding-bottom:0px;
+   font-family: monospace;
+   font-size:15px;
+   font-weight:normal;
+   color:#333333;
+}
+form.form p.value span {
+   padding-top:0px;
+   padding-bottom:0px;
+   font-family: monospace;
+   font-size:15px;
+   font-weight:normal;
+}
+form.form p.input {
+   float:left;
+   margin-top:0px;
+   margin-bottom:0px;
+   font-family:monospace;
+   font-size:15px;
+   font-weight:normal;
+   text-align:left;
+}
+form.form p.input select {
+   width: 419px;
+   text-align:left;
+   font-weight:normal;
+}
+form.form p.input input[type="text"] {
+   width: 300px; /* 150ps or 300px */
+   text-align:left;
+   font-weight:normal;
+}
+form.form p.input input[type="submit"], input[type="button"] {
+   padding-top:8px;
+   padding-bottom:8px;
+   padding-right:25px;
+   padding-left:25px;
+   background-color:#afafaf;
+   border:solid 1px #a9a9a9;
+   -moz-border-radius:2px;
+   -webkit-border-radius:2px;
+   border-radius:2px;
+   font-family:monospace;
+   font-size:15px;
+   font-weight:bold;
+   color:#000000;
+   text-decoration:underline;
+}
+form.form p.label input[type="submit"], input[type="button"] {
+   padding-top:8px;
+   padding-bottom:8px;
+   padding-right:25px;
+   padding-left:25px;
+   background-color:#afafaf;
+   border:solid 1px #a9a9a9;
+   -moz-border-radius:2px;
+   -webkit-border-radius:2px;
+   border-radius:2px;
+   font-family:monospace;
+   font-size:15px;
+   font-weight:bold;
+   color:#000000;
+   text-decoration:underline;
+}
+form.form p.value input[type="submit"], input[type="button"] {
+   padding-top:8px;
+   padding-bottom:8px;
+   padding-right:25px;
+   padding-left:25px;
+   background-color:#afafaf;
+   border:solid 1px #a9a9a9;
+   -moz-border-radius:2px;
+   -webkit-border-radius:2px;
+   border-radius:2px;
+   font-family:monospace;
+   font-size:15px;
+   font-weight:bold;
+   color:#000000;
+   text-decoration:underline;
+}
+/**
+ * DIV table
+ */
+.div-table {
+	display: table;
+	width: auto;
+}
+.div-table-row {
+	display: table-row; 
+}
+.div-table-heading {
+	background-color: #FFF;
+	display: table-header-group;
+	font-weight: bold;
+}
+.div-table-cell, .div-table-head {
+	display: table-cell;
+	padding: 3px 5px;
+	border: 0px solid #FFF;
+	vertical-align: top;
+}
+.div-table-foot {
+	display: table-footer-group;
+	background-color: #FFF;
+	font-weight: bold;
+}
+.div-table-body {
+	display: table-row-group;
+}
+</style>
+</head>
+
+<body>
+<div><h1>SOURCE:</h1></div>
+
+<!-- form begin -->
+<div id="_form" style="margin:16px;">
+<form class="form" name="form" method="post" action="../save">
+
+<!-- table begin -->
+<div class="div-table">
+
+<!-- table body begin -->
+<div class="div-table-body">
+
+<!-- source.id -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p id="Top" /></div>
+<div class="div-table-cell"><p class="input"><input id="source.id" name="source.id" type="hidden" /></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.name -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.name">Name:</label></p></div>
+<div class="div-table-cell"><p class="input"><input id="source.name" name="source.name" type="text" style="background-color:#fffff8;" /></p><p class="input">*</p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.abbr -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.abbr">Name Abbr:</label></p></div>
+<div class="div-table-cell"><p class="input"><input id="source.abbr" name="source.abbr" type="text" style="background-color:#fffff8;" /></p><p class="input">*</p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.logo -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.logo">Logo:</label></p></div>
+<div class="div-table-cell">
+	<p class="input"><textarea id="source.logo" name="source.logo" cols="50" rows="5" style="background-color:#fffff8;"></textarea></p>
+	<p class="input">*</p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.domain -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.domain">Domain:</label></p></div>
+<div class="div-table-cell">
+	<p class="input"><input id="source.domain" name="source.domain" type="text" style="background-color:#fffff8;" /></p>
+	<p class="input">*</p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.www -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.www">WWW:</label></p></div>
+<div class="div-table-cell">
+	<p class="input"><input id="source.www" name="source.www" type="text" style="background-color:#fffff8;" /></p>
+	<p class="input">*</p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.description -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.description">Description:</label></p></div>
+<div class="div-table-cell"><p class="input"><textarea id="source.description" name="source.description" cols="50" rows="5"></textarea></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.type -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="type">Type:</label></p></div>
+<div class="div-table-cell">
+	<p class="input">
+	<select id="source.type" name="source.type" style="background-color:#fffff8;">
+	<option value="null">&lt;Please select from the options below&gt;</option>
+	<option value="0"   >0x00 Official Website</option>
+	<option value="16"  >0x10 Third-Party Platform</option>
+	<option value="240" >0xF0 Search Engine</option>
+	</select>
+	</p>
+	<p class="input">*</p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+
+<!-- source.specific -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.specific">Specific:</label></p></div>
+<div class="div-table-cell">
+	<p class="input"><textarea id="source.specific" name="source.specific" cols="50" rows="5"></textarea></p>
+	<p class="input">&nbsp;&nbsp;(Specific keywords values for searching)</p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.priority -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.priority">Priority:</label></p></div>
+<div class="div-table-cell">
+	<p class="input"><input  id="source.priority" name="source.priority" type="text" style="background-color:#fffff8;" /></p>
+	<p class="input">* (priority &lt; 0)</p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.latency -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.latency">Latency:</label></p></div>
+<div class="div-table-cell">
+	<p class="input"><input  id="source.latency" name="source.latency" type="text" style="background-color:#fffff8;" /></p>
+	<p class="input">* (milliseconds)</p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<!-- source.label1 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url1">Label1:</label></p></div>
+<div class="div-table-cell">
+   <p class="input"><input id="source.label1" name="source.label1" type="text" style="background-color:#fffff8;" /></p>
+   <p class="input">*</p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.url1 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="url1">URL1:</label></p></div>
+<div class="div-table-cell">
+   <p class="input"><textarea id="source.url1" name="source.url1" cols="50" rows="5" style="background-color:#fffff8;"></textarea></p>
+   <p class="input">* (Top story list URL)</p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.type1 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="type1">URL1 Type:</label></p></div>
+<div class="div-table-cell">
+	<p class="input">
+	<select id="source.type1" name="source.type1" style="background-color:#fffff8;">
+	<option value="null">&lt;Please select from the options below&gt;</option>
+	<option value="1"   >0x01 Official Website Homepage</option>
+	<option value="2"   >0x02 Official Website List Pages</option>
+	<option value="8"   >0x08 Official Website RSS</option>
+	<option value="17"  >0x11 Third-Party Platform Homepage</option>
+	<option value="18"  >0x12 Third-Party Platform List Pages</option>
+	<option value="24"  >0x18 Third-Party Platform RSS</option>
+	<option value="241" >0xF1 Search Engine Homepage</option>
+	<option value="242" >0xF2 Search Engine Results Pages</option>
+	</select>
+	</p>
+	<p class="input">*</p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.encoding1 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.encoding1">URL1 Encoding:</label></p></div>
+<div class="div-table-cell"><p class="input"><input id="source.encoding1" name="source.encoding1" type="text" style="background-color:#fffff8;" /></p><p class="input">*</p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.country1 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.country1">URL1 Country:</label></p></div>
+<div class="div-table-cell"><p class="input"><input id="source.country1" name="source.country1" type="text" /></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.language1 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.language1">URL1 Language:</label></p></div>
+<div class="div-table-cell"><p class="input"><input  id="source.language1" name="source.language1" type="text" /></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<!-- source.label2 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="url2">Label2:</label></p></div>
+<div class="div-table-cell">
+	<p class="input"><input id="source.label2" name="source.label2" type="text" /></p>
+   	<p class="input"><a href="#Ok">Ok</a></p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.url2 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url2">URL2:</label></p></div>
+<div class="div-table-cell">
+	<p class="input"><textarea id="source.url2" name="source.url2" cols="50" rows="5"></textarea></p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.type2 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.type2">URL2 Type:</label></p></div>
+<div class="div-table-cell">
+	<p class="input">
+	<select id="source.type2" name="source.type2">
+	<option value="null">&lt;Please select from the options below&gt;</option>
+	<option value="1"   >0x01 Official Website Homepage</option>
+	<option value="2"   >0x02 Official Website List Pages</option>
+	<option value="8"   >0x08 Official Website RSS</option>
+	<option value="17"  >0x11 Third-Party Platform Homepage</option>
+	<option value="18"  >0x12 Third-Party Platform List Pages</option>
+	<option value="24"  >0x18 Third-Party Platform RSS</option>
+	<option value="241" >0xF1 Search Engine Homepage</option>
+	<option value="242" >0xF2 Search Engine Results Pages</option>
+	</select>
+	</p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<!-- source.encoding2 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.encoding2">URL2 Encoding:</label></p></div>
+<div class="div-table-cell"><p class="input"><input id="source.encoding2" name="source.encoding2" type="text" /></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<!-- source.label3 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url3">Label3:</label></p></div>
+<div class="div-table-cell">
+	<p class="input"><input id="source.label3" name="source.label3" type="text" /></p>
+   	<p class="input"><a href="#Ok">Ok</a></p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url3">URL3:</label></p></div>
+<div class="div-table-cell">
+	<p class="input"><textarea id="source.url3" name="source.url3" cols="50" rows="5"></textarea></p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="type3">URL3 Type:</label></p></div>
+<div class="div-table-cell">
+	<p class="input">
+	<select id="source.type3" name="source.type3">
+	<option value="null">&lt;Please select from the options below&gt;</option>
+	<option value="1"   >0x01 Official Website Homepage</option>
+	<option value="2"   >0x02 Official Website List Pages</option>
+	<option value="8"   >0x08 Official Website RSS</option>
+	<option value="17"  >0x11 Third-Party Platform Homepage</option>
+	<option value="18"  >0x12 Third-Party Platform List Pages</option>
+	<option value="24"  >0x18 Third-Party Platform RSS</option>
+	<option value="241" >0xF1 Search Engine Homepage</option>
+	<option value="242" >0xF2 Search Engine Results Pages</option>
+	</select>
+	</p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.encoding3">URL3 Encoding:</label></p></div>
+<div class="div-table-cell"><p class="input"><input  id="source.encoding3" name="source.encoding3" type="text" /></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<!-- source.label4 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url4">Label4:</label></p></div>
+<div class="div-table-cell">
+	<p class="input"><input id="source.label4" name="source.label4" type="text" /></p>
+   	<p class="input"><a href="#Ok">Ok</a></p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url4">URL4:</label></p></div>
+<div class="div-table-cell">
+	<p class="input"><textarea id="source.url4" name="source.url4" cols="50" rows="5"></textarea></p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.type4">URL4 Type:</label></p></div>
+<div class="div-table-cell">
+	<p class="input">
+	<select id="source.type4" name="source.type4">
+	<option value="null">&lt;Please select from the options below&gt;</option>
+	<option value="1"   >0x01 Official Website Homepage</option>
+	<option value="2"   >0x02 Official Website List Pages</option>
+	<option value="8"   >0x08 Official Website RSS</option>
+	<option value="17"  >0x11 Third-Party Platform Homepage</option>
+	<option value="18"  >0x12 Third-Party Platform List Pages</option>
+	<option value="24"  >0x18 Third-Party Platform RSS</option>
+	<option value="241" >0xF1 Search Engine Homepage</option>
+	<option value="242" >0xF2 Search Engine Results Pages</option>
+	</select>
+	</p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.encoding4">URL4 Encoding:</label></p></div>
+<div class="div-table-cell"><p class="input"><input  id="source.encoding4" name="source.encoding4" type="text" /></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<!-- source.label5 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url5">Label5:</label></p></div>
+<div class="div-table-cell">
+	<p class="input"><input id="source.label5" name="source.label5" type="text" /></p>
+   	<p class="input"><a href="#Ok">Ok</a></p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url5">URL5:</label></p></div>
+<div class="div-table-cell">
+	<p class="input"><textarea id="source.url5" name="source.url5" cols="50" rows="5"></textarea></p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.type5">URL5 Type:</label></p></div>
+<div class="div-table-cell">
+	<p class="input">
+	<select id="source.type5" name="source.type5">
+	<option value="null">&lt;Please select from the options below&gt;</option>
+	<option value="1"   >0x01 Official Website Homepage</option>
+	<option value="2"   >0x02 Official Website List Pages</option>
+	<option value="8"   >0x08 Official Website RSS</option>
+	<option value="17"  >0x11 Third-Party Platform Homepage</option>
+	<option value="18"  >0x12 Third-Party Platform List Pages</option>
+	<option value="24"  >0x18 Third-Party Platform RSS</option>
+	<option value="241" >0xF1 Search Engine Homepage</option>
+	<option value="242" >0xF2 Search Engine Results Pages</option>
+	</select>
+	</p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.encoding5">URL5 Encoding:</label></p></div>
+<div class="div-table-cell"><p class="input"><input  id="source.encoding5" name="source.encoding5" type="text" /></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<!-- source.label6 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url6">Label6:</label></p></div>
+<div class="div-table-cell">
+	<p class="input"><input id="source.label6" name="source.label6" type="text" /></p>
+   	<p class="input"><a href="#Ok">Ok</a></p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url6">URL6:</label></p></div>
+<div class="div-table-cell"><p class="input"><textarea id="source.url6" name="source.url6" cols="50" rows="5"></textarea></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.type6">URL6 Type:</label></p></div>
+<div class="div-table-cell">
+	<p class="input">
+	<select id="source.type6" name="source.type6">
+	<option value="null">&lt;Please select from the options below&gt;</option>
+	<option value="1"   >0x01 Official Website Homepage</option>
+	<option value="2"   >0x02 Official Website List Pages</option>
+	<option value="8"   >0x08 Official Website RSS</option>
+	<option value="17"  >0x11 Third-Party Platform Homepage</option>
+	<option value="18"  >0x12 Third-Party Platform List Pages</option>
+	<option value="24"  >0x18 Third-Party Platform RSS</option>
+	<option value="241" >0xF1 Search Engine Homepage</option>
+	<option value="242" >0xF2 Search Engine Results Pages</option>
+	</select>
+	</p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.encoding6">URL6 Encoding:</label></p></div>
+<div class="div-table-cell"><p class="input"><input  id="source.encoding6" name="source.encoding6" type="text" /></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<!-- source.label7 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url7">Label7:</label></p></div>
+<div class="div-table-cell">
+	<p class="input"><input id="source.label7" name="source.label7" type="text" /></p>
+   	<p class="input"><a href="#Ok">Ok</a></p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url7">URL7:</label></p></div>
+<div class="div-table-cell"><p class="input"><textarea id="source.url7" name="source.url7" cols="50" rows="5"></textarea></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.type7">URL7 Type:</label></p></div>
+<div class="div-table-cell">
+	<p class="input">
+	<select id="source.type7" name="source.type7">
+	<option value="null">&lt;Please select from the options below&gt;</option>
+	<option value="1"   >0x01 Official Website Homepage</option>
+	<option value="2"   >0x02 Official Website List Pages</option>
+	<option value="8"   >0x08 Official Website RSS</option>
+	<option value="17"  >0x11 Third-Party Platform Homepage</option>
+	<option value="18"  >0x12 Third-Party Platform List Pages</option>
+	<option value="24"  >0x18 Third-Party Platform RSS</option>
+	<option value="241" >0xF1 Search Engine Homepage</option>
+	<option value="242" >0xF2 Search Engine Results Pages</option>
+	</select>
+	</p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.encoding7">URL7 Encoding:</label></p></div>
+<div class="div-table-cell"><p class="input"><input  id="source.encoding7" name="source.encoding7" type="text" /></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<!-- source.label8 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url8">Label8:</label></p></div>
+<div class="div-table-cell">
+	<p class="input"><input id="source.label8" name="source.label8" type="text" /></p>
+   	<p class="input"><a href="#Ok">Ok</a></p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url8">URL8:</label></p></div>
+<div class="div-table-cell"><p class="input"><textarea id="source.url8" name="source.url8" cols="50" rows="5"></textarea></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.type8">URL8 Type:</label></p></div>
+<div class="div-table-cell">
+	<p class="input">
+	<select id="source.type8" name="source.type8">
+	<option value="null">&lt;Please select from the options below&gt;</option>
+	<option value="1"   >0x01 Official Website Homepage</option>
+	<option value="2"   >0x02 Official Website List Pages</option>
+	<option value="8"   >0x08 Official Website RSS</option>
+	<option value="17"  >0x11 Third-Party Platform Homepage</option>
+	<option value="18"  >0x12 Third-Party Platform List Pages</option>
+	<option value="24"  >0x18 Third-Party Platform RSS</option>
+	<option value="241" >0xF1 Search Engine Homepage</option>
+	<option value="242" >0xF2 Search Engine Results Pages</option>
+	</select>
+	</p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.encoding8">URL8 Encoding:</label></p></div>
+<div class="div-table-cell"><p class="input"><input  id="source.encoding8" name="source.encoding8" type="text" /></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<!-- source.label9 -->
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url9">Label9:</label></p></div>
+<div class="div-table-cell">
+	<p class="input"><input id="source.label9" name="source.label9" type="text" /></p>
+   	<p class="input"><a href="#Ok">Ok</a></p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.url9">URL9:</label></p></div>
+<div class="div-table-cell"><p class="input"><textarea id="source.url9" name="source.url9" cols="50" rows="5"></textarea></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.type9">URL9 Type:</label></p></div>
+<div class="div-table-cell">
+	<p class="input">
+	<select id="source.type9" name="source.type9">
+	<option value="null">&lt;Please select from the options below&gt;</option>
+	<option value="1"   >0x01 Official Website Homepage</option>
+	<option value="2"   >0x02 Official Website List Pages</option>
+	<option value="8"   >0x08 Official Website RSS</option>
+	<option value="17"  >0x11 Third-Party Platform Homepage</option>
+	<option value="18"  >0x12 Third-Party Platform List Pages</option>
+	<option value="24"  >0x18 Third-Party Platform RSS</option>
+	<option value="241" >0xF1 Search Engine Homepage</option>
+	<option value="242" >0xF2 Search Engine Results Pages</option>
+	</select>
+	</p>
+	<!-- <p class="value"><span id="source.type9" name="source.type9">OPTION_VALUE</span></p> -->
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.encoding9">URL9 Encoding:</label></p></div>
+<div class="div-table-cell"><p class="input"><input  id="source.encoding9" name="source.encoding9" type="text" /></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label"><label for="source.version">Version:</label></p></div>
+<div class="div-table-cell"><p class="input"><input  id="source.version" name="source.version" type="text" /></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<div class="div-table-row ">
+<div class="div-table-cell"><p class="label" id="Ok" /></div>
+<div class="div-table-cell"><p class="value"><input type="submit" value="Save" accesskey="s"></p></div>
+<div class="div-table-cell"></div>
+</div>
+
+<br />
+
+<div class="div-table-row ">
+<div class="div-table-cell"></div>
+<div class="div-table-cell">
+	<p class="input"><a href="#Top">Goto Page Top</a></p>
+	<p class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+	<p class="input"><a href="javascript:history.go(-1);">Back to previous page</a></p>
+</div>
+<div class="div-table-cell"></div>
+</div>
+
+</div>
+<!-- table body end -->
+</div>
+<!-- table end -->
+
+</form>
+</div>
+<!-- form end -->
+
+<br /><br /><br />
+
+</body>
+</html>
