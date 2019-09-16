@@ -24,7 +24,7 @@ public class SourceService {
   }
   
   public List<Source> getItemsById(List<Long> idList) {
-    return repo.findAll(idList);
+    return repo.findAllById(idList);
   }
   
   public Source getItemById(Long id) {
