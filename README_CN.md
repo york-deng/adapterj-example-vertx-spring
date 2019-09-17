@@ -1,6 +1,6 @@
 # adapterj-example-vertx-spring
 
-一个基于，标准HTML模板(没有任何特殊的语法、标签、属性)、Vert.x，及[AdapterJ](https://github.com/york-deng/adapterj)的范例. 
+一个基于，标准HTML模板(没有任何特殊的语法、标签、属性)、Vert.x，Spring Boot，Spring Data，及[AdapterJ](https://github.com/york-deng/adapterj)的范例. 
 
 ## 运行环境
 * JDK 1.8+

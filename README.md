@@ -2,7 +2,7 @@
 
 点击[这里](https://github.com/york-deng/adapterj-example-vertx-spring/blob/master/README_CN.md)阅读[中文说明](https://github.com/york-deng/adapterj-example-vertx-spring/blob/master/README_CN.md)
 
-An example based on Standard HTML Template (without any special syntax, tags, attributes), Vert.x, and [AdapterJ](https://github.com/york-deng/adapterj). 
+An example based on Standard HTML Template (without any special syntax, tags, attributes), Vert.x, Spring Boot, Spring Data, and [AdapterJ](https://github.com/york-deng/adapterj). 
 
 ## Environment Requirements
 * JDK 1.8+
