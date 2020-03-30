@@ -10,10 +10,8 @@ An example based on Standard HTML Template (without any special syntax, tags, at
 * Vert.x 3.8+
 
 ## Guide 
-1. Download adapterj-example-vertx-spring   
-2. Unpack adapterj-example-vertx-spring-master.zip   
-3. Run these two Command Lines as below   
-4. Open the [URL](http://localhost:8080/) with a web browser   
+1. Run these Command Lines as below   
+2. Open the [URL](http://localhost:8080/) with a web browser   
 
 ## Command Lines
 ```
