@@ -15,9 +15,16 @@
 
 ## 命令行
 ```
+git clone https://github.com/york-deng/adapterj.git
+cd adapterj
+mvn clean deploy
+
+cd ..
+
+git clone https://github.com/york-deng/adapterj-example-vertx-spring.git
 cd adapterj-example-vertx-spring
 mvn clean package   
-java -cp .:target/adapterj-example-vertx-spring-1.0.0-fat.jar com.adapterj.example.vertx.spring.Runner   
+java -cp .:target/adapterj-example-vertx-spring-1.0.0-fat.jar com.adapterj.example.vertx.spring.Runner
 ```
 
 ## 演示地址
