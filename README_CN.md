@@ -8,10 +8,8 @@
 * Vert.x 3.8+
 
 ## 使用方法 
-1. 下载 adapterj-example-vertx-spring   
-2. 解压 adapterj-example-vertx-spring-master.zip   
-3. 运行以下命令行   
-4. 在浏览器中打开[演示地址](http://localhost:8080/)   
+1. 运行以下命令行   
+2. 在浏览器中打开[演示地址](http://localhost:8080/)   
 
 ## 命令行
 ```
