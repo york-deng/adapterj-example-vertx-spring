@@ -15,7 +15,7 @@
     <!-- the main verticle class name -->
     <main.class>com.adapterj.example.vertx.spring.Runner</main.class>
     <fastjson.version>1.2.38</fastjson.version>
-    <h2.version>1.4.191</h2.version>
+    <h2.version>2.1.210</h2.version>
     <hibernate.version>4.3.10.Final</hibernate.version>
     <spring.data.jpa.version>2.0.0.RELEASE</spring.data.jpa.version>
     <vertx.core.version>3.6.0</vertx.core.version>
