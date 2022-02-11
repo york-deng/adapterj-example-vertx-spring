@@ -19,7 +19,7 @@
     <hibernate.version>4.3.10.Final</hibernate.version>
     <spring.data.jpa.version>2.0.0.RELEASE</spring.data.jpa.version>
     <vertx.core.version>3.6.0</vertx.core.version>
-    <vertx.web.version>3.6.0</vertx.web.version>
+    <vertx.web.version>3.9.4</vertx.web.version>
     <slf4j.version>1.7.21</slf4j.version>
   </properties>
 
